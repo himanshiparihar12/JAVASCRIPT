@@ -1,7 +1,9 @@
-//PRINT 'YES YOU CAN DRIVE' OR 'NO YOU CANNOT DRIVE' BASED ON AGE BEING GREATER THAN
-//18 USING TERNARY OPERATOR
-
-const prompt = require("prompt-sync")();
-let age = Number(prompt("Enter the Age = "));  
-let a = age>=18 ?"Yes you can Drive" :"No you cannot Drive";
-console.log(a);
+// Filter patients whose age is more than 60.
+const patients = [
+  { id: 1, name: "Dinesh", age: 65 },
+  { id: 2, name: "Sunita", age: 45 },
+  { id: 3, name: "Mahesh", age: 72 },
+  { id: 4, name: "Komal", age: 58 }
+];
+const pat = patients.filter ((p) => p.age > 60);
+console.log(pat);

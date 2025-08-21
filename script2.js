@@ -1,12 +1,8 @@
-//WRITE A JAVASCRIPT PROGRAM TO FIND WHETHER A NUMBER IS DIVISIBLE BY 2 AND 3 
-
-const prompt = require("prompt-sync")();
-let num = Number(prompt("Enter the Number = "));  
-if(num%2==0 && num%3==0)
-{
-    console.log("Entered number is divisible by 2 and 3");
-}
-else
-{
-    console.log("Entered Number is not divisible by 2 and 3")
-}
+const patients = [
+  { id: 1, name: "Rohan", admitted: true },
+  { id: 2, name: "Anjali", admitted: false },
+  { id: 3, name: "Vikram", admitted: true },
+  { id: 4, name: "Sita", admitted: false }
+];
+const admittedPatients = patients.filter((patient) => patient.admitted === true);
+console.log(admittedPatients);
